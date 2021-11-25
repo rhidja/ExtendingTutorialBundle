@@ -27,4 +27,10 @@ class EzSystemsExtendingTutorialExtension extends Extension
         $loader->load('udw_tab_tutorial.yml');
         $loader->load('services.yml');
     }
+
+    public function prepend( ContainerBuilder $container )
+    {
+        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
+        $loader->load('custom_tags.yml');
+    }
 }
