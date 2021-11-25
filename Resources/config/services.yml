@@ -1,1 +1,10 @@
 ---
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    EzSystems\ExtendingTutorialBundle\Tab\Dashboard\Everyone\EveryoneArticleTab:
+        tags:
+            - { name: ezplatform.tab, group: dashboard-everyone }
