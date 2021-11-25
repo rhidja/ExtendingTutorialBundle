@@ -1,0 +1,25 @@
+{
+    "name" : "rhidja/extending-tutorial-bundle",
+    "description" : "This bundle add read only custom field type",
+    "type" : "symfony-bundle",
+    "authors": [
+        {
+            "name": "Ramtane Hidja",
+            "homepage": "https://www.hidja.fr"
+        }
+    ],
+    "require" : {
+        "php": "^7.1",
+        "ezsystems/ezpublish-kernel": "^7.5"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "EzSystems\\ExtendingTutorialBundle\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.1.x-dev"
+        }
+    }
+}
