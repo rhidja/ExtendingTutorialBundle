@@ -8,3 +8,12 @@ services:
     EzSystems\ExtendingTutorialBundle\Tab\Dashboard\Everyone\EveryoneArticleTab:
         tags:
             - { name: ezplatform.tab, group: dashboard-everyone }
+
+    EzSystems\ExtendingTutorialBundle\EventListener\:
+        resource: '../../EventListener/*'
+        tags:
+            - { name: kernel.event_subscriber }
+
+    EzSystems\ExtendingTutorialBundle\Controller\:
+        resource: '../../Controller/*'
+        exclude: '../../Controller/{Controller}'
